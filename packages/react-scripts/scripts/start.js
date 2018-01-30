@@ -96,6 +96,11 @@ choosePort(HOST, DEFAULT_PORT)
       if (isInteractive) {
         clearConsole();
       }
+      console.log(
+        chalk.red(
+          '@molszanski fork with added stylus and coffeescript support...\n'
+        )
+      );
       console.log(chalk.cyan('Starting the development server...\n'));
       openBrowser(urls.localUrlForBrowser);
     });
